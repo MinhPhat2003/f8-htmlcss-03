@@ -12,15 +12,31 @@ body {
     --header-bg: #10375c;
 }
 /* Common */
+a {
+    text-decoration: none;
+}
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
 }
+.btn {
+    display: inline-block;
+    min-width: 205px;
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 99px;
+    background: #2e80ce;
+    line-height: 60px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
 /* Header */
 .header {
     min-height: 100vh;
     background: var(--header-bg);
+    padding-top: 30px;
 }
 .logo {
     font-size: 1rem;
@@ -57,7 +73,53 @@ body {
     font-weight: 400;
     color: #fff;
 }
-.logo__brand-small {
+.logo__brand--small {
     font-size: 1.2em;
     font-weight: 300;
+}
+/* Header Top */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+.navbar__link--active {
+    text-shadow: 1px 0 0 currentColor;
+}
+.navbar__link--active::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: relative;
+    background: #fff;
+    left: -8px;
+    top: -2px;
+}
+.action__login,
+.navbar__link {
+    padding: 4px 21px;
+    color: #c9d2da;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+.navbar__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+}
+.action__signup {
+    min-width: 104px;
+    height: 44px;
+    font-size: 1.6rem;
+    line-height: 44px;
+    color: #fff;
+}
+.action__signup:hover {
+    opacity: 0.9;
+    cursor: pointer;
 }
