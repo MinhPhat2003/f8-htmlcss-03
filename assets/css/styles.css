@@ -434,3 +434,41 @@ a {
 .member__control-next-icon {
     rotate: 180deg;
 }
+/* Install */
+.install {
+    padding-top: 180px;
+    padding-bottom: 85px;
+}
+.install__inner {
+    border-radius: 4px;
+    background: #2e80ce;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.install__img {
+    display: block;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    margin-top: -95px;
+}
+.install__content {
+    max-width: 586px;
+}
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+.install__heading {
+    max-width: 510px;
+}
+.install__desc {
+    max-width: 586px;
+}
+.install__row {
+    display: flex;
+    margin-top: 38px;
+    column-gap: 28px;
+}
